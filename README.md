@@ -1,6 +1,4 @@
-# Endogenous_vs_Vector_hoTC_January2024
 
-# Endogenous vs Vector hotc Sam project
 
 This project was realised for Samantha Ginn (sginn@cmri.org.au) from CMRI. Data comprise two PCR products for NGS which are comprised of two transcripts. The aim would be to determine the percentage of each transcript in the sample. One is endogenous and the other is introduced by NHEJ.
 
@@ -91,33 +89,33 @@ Insert range:        	95 - 481
 
 **Step 3: Split per barcode**
 
-|**Pool 1**||||
-|:-----------|:-----------|:-----------|:-----------|
-|**Barcode**|**BC sequence** 	|**read count**|**percentage**|
-|1|	GTTCA	|484907	|11.98|
-|2	|GTCAT	|489370	|12.095|
-|3|	CTGTA|	472124|	11.67|
-|4	|GTATT|	401049|	9.91|
-|5|	CTAGT|	421016	|10.41|
-|6	|ACTTC|	416062	|13.58|
-|7	|CCTAT|	444982|	10.998|
-|8	|ACTGA|	493340|	12.19|
-|9	|TCCAA|	293	|0.00724|
-|10	|GCATT|	480|	0.01|
+|**Pool 1**|||||
+|:-----------|:-----------|:-----------|:-----------|:-----------|
+|**Barcode**|**BC sequence** 	|**read count**|**percentage**|**reads lost in "QC"**|
+|1|	GTTCA	|484907	|11.98|5004|
+|2	|GTCAT	|489370	|12.095|3925|
+|3|	CTGTA|	472124|	11.67|4974|
+|4	|GTATT|	401049|	9.91|10238|
+|5|	CTAGT|	421016	|10.41|13140|
+|6	|ACTTC|	416062	|13.58|3677|
+|7	|CCTAT|	444982|	10.998|12584|
+|8	|ACTGA|	493340|	12.19|40090|
+|9	|TCCAA|	293	|0.00724|13|
+|10	|GCATT|	480|	0.01|18|
 		
-|**Pool 2**||||
-|:-----------|:-----------|:-----------|:-----------|
-|**Barcode**|**BC sequence** 	|**read count**|**percentage**|
-|1|	GTTCA|	812588|	15.34|
-|2	|GTCAT|	679785|	12.84|
-|3|	CTGTA|	789781|	14.91|
-|4|	GTATT|	671136|	12.67|
-|5|	CTAGT|	721248	|13.62|
-|6	|ACTTC	|79|	0.0015|
-|7	|CCTAT|	93|	0.0017|
-|8|	ACTGA|	148|	0.002|
-|9	|TCCAA|	414465	|7.83|
-|10	|GCATT	|541358|	10.22|
+|**Pool 2**|||||
+|:-----------|:-----------|:-----------|:-----------|:-----------|
+|**Barcode**|**BC sequence** 	|**read count**|**percentage**|**reads lost in "QC"**|
+|1|	GTTCA|	812588|	15.34|5874|
+|2	|GTCAT|	679785|	12.84|14492|
+|3|	CTGTA|	789781|	14.91|6170|
+|4|	GTATT|	671136|	12.67|9603|
+|5|	CTAGT|	721248	|13.62|17715|
+|6	|ACTTC	|79|	0.0015|5|
+|7	|CCTAT|	93|	0.0017|6|
+|8|	ACTGA|	148|	0.002|17|
+|9	|TCCAA|	414465	|7.83|17831|
+|10	|GCATT	|541358|	10.22|13011|
 
 				
 
@@ -154,7 +152,7 @@ samtools view -bS {params.temp_header} > {output.filtered_bam}
 |**Barcode**|**BC sequence** | **Endogenous reads**	|	**% Endogenous reads**	|**Vector reads**	|	**% Vector reads**	|
 |1|	GTTCA|	191945|23.62	|	614769|	75.65|
 |2|	GTCAT	|139113|	20.46	|526180|	77.4|
-|3|	CTGTA|	218470	|27.66	|	81089|	10.26|
+|3|	CTGTA|	218470	|27.66	|	565141|	71.55|
 |4|	GTATT|	308790|46	|	352743|	52.55|
 |5	|CTAGT|		250269|	34.69		|453264|	62.84|
 |6	|ACTTC|			70|	88.60	|	4|	5.06|
