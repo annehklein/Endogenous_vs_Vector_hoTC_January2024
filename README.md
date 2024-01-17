@@ -1,4 +1,4 @@
-
+# Endogenous vs Vector hotc Sam project
 
 This project was realised for Samantha Ginn (sginn@cmri.org.au) from CMRI. Data comprise two PCR products for NGS which are comprised of two transcripts. The aim would be to determine the percentage of each transcript in the sample. One is endogenous and the other is introduced by NHEJ.
 
@@ -91,7 +91,7 @@ Insert range:        	95 - 481
 
 |**Pool 1**|||||
 |:-----------|:-----------|:-----------|:-----------|:-----------|
-|**Barcode**|**BC sequence** 	|**read count**|**percentage**|**reads lost in "QC"**|
+|**Barcode**|**BC sequence** 	|**read count**|**percentage**|**Nbr of reads lost in "QC"**|
 |1|	GTTCA	|484907	|11.98|5004|
 |2	|GTCAT	|489370	|12.095|3925|
 |3|	CTGTA|	472124|	11.67|4974|
@@ -105,7 +105,7 @@ Insert range:        	95 - 481
 		
 |**Pool 2**|||||
 |:-----------|:-----------|:-----------|:-----------|:-----------|
-|**Barcode**|**BC sequence** 	|**read count**|**percentage**|**reads lost in "QC"**|
+|**Barcode**|**BC sequence** 	|**read count**|**percentage**|**Nbr of reads lost in "QC"**|
 |1|	GTTCA|	812588|	15.34|5874|
 |2	|GTCAT|	679785|	12.84|14492|
 |3|	CTGTA|	789781|	14.91|6170|
